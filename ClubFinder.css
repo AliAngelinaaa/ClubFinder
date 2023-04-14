@@ -1,0 +1,90 @@
+.navbar-light{
+    font-family: Verdana-Bold;
+    color:rgb(227, 227, 227);
+    background-color: rgb(85, 97, 160);
+}
+
+.nav-link{
+    color:rgb(227, 227, 227);
+}
+
+.nav-link:hover{
+    font-size: 17px;
+    color: rgb(255, 247, 238);
+}
+
+.navbar-brand{
+    font-size: 25px;
+    color:rgb(227, 227, 227);
+}
+
+.navbar-brand:hover, .navbar-brand:active:focus{
+    font-size: 26px;
+    color: rgb(255, 247, 238);
+}
+
+.breadcrumb-item{
+    font-family:Verdana;
+    font-weight: 500;
+}
+
+.btn-primary{
+    font-family: Verdana-Bold;
+    color:rgb(227, 227, 227);
+    background-color: rgb(85, 97, 160);
+    border-color:rgb(85, 97, 160);
+}
+
+.btn-primary:hover{
+    background-color:rgb(63, 77, 143);
+    border-color:rgb(63, 77, 143);
+}
+
+.btn-primary:active:focus{
+    background-color:rgb(40, 54, 126);
+    border-color:rgb(40, 54, 126);
+}
+
+.input-group{
+    background-color:rgb(236, 231, 227);
+}
+
+.filter-btn{
+    font-family: Verdana;
+    color: rgb(38, 38, 38);
+    background-color: rgb(247, 246, 245);
+}
+
+.sort-btn{
+    font-family: Verdana;
+    color: rgb(38, 38, 38);
+    background-color: rgb(247, 246, 245);
+}
+
+.content-header{
+    font-family: Verdana-Bold;
+    color: rgb(52, 52, 52);
+    background-color: rgb(85, 97, 160, 30%);
+}
+
+.content-details{
+    font-family: Verdana;
+    color: rgb(74, 74, 74);
+    background-color: rgb(236, 231, 227);
+}
+
+.header-margin-left{
+    margin-left: 10px;
+}
+
+.details-margin-left{
+    margin-left: 20px;
+}
+
+.dd-margin-left{
+    margin-left: 10px;
+}
+
+
+
+
