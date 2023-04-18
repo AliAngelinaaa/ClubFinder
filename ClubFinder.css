@@ -45,6 +45,23 @@
     border-color:rgb(40, 54, 126);
 }
 
+.btn-primary-bc{
+    font-family: Verdana-Bold;
+    color:rgb(227, 227, 227);
+    background-color: #800020;
+    border-color:#800020;
+}
+
+.btn-primary-bc:hover{
+    background-color: #6d001b;
+    border-color:#6d001b;
+}
+
+.btn-primary-bc:active:focus{
+    background-color: #5c0017;
+    border-color:#5c0017;
+}
+
 .input-group{
     background-color:rgb(236, 231, 227);
 }
@@ -55,16 +72,50 @@
     background-color: rgb(247, 246, 245);
 }
 
+.filter-btn-bc{
+    font-family: Verdana;
+    color: rgb(38, 38, 38);
+    background-color: rgba(128, 0, 32, 0.5);
+}
+
+.filter-btn-bc:hover{
+    background-color: rgba(128, 0, 32, 0.5);
+}
+
+.filter-btn-bc:active, .filter-btn-bc:focus{
+    background-color: rgba(109, 0, 27, 0.5);
+}
+
 .sort-btn{
     font-family: Verdana;
     color: rgb(38, 38, 38);
     background-color: rgb(247, 246, 245);
 }
 
+.sort-btn-bc{
+    font-family: Verdana;
+    color: rgb(38, 38, 38);
+    background-color: rgba(128, 0, 32, 0.5);
+}
+
+.sort-btn-bc:hover{
+    background-color: rgba(128, 0, 32, 0.5);
+}
+
+.sort-btn-bc:active, .sort-btn-bc:focus{
+    background-color: rgba(109, 0, 27, 0.5);
+}
+
 .content-header{
     font-family: Verdana-Bold;
     color: rgb(52, 52, 52);
     background-color: rgb(85, 97, 160, 30%);
+}
+
+.content-header-bc{
+    font-family: Verdana-Bold;
+    color: rgb(52, 52, 52);
+    background-color: rgba(128, 0, 32, 0.7);
 }
 
 .content-details{
@@ -83,6 +134,16 @@
 
 .dd-margin-left{
     margin-left: 10px;
+}
+
+.navbar-bc{
+    font-family: Verdana-Bold;
+    color: rgb(227, 227, 227);
+    background-color: #800020;
+}
+
+.dropdown-item:hover{
+    background-color:rgba(128, 0, 32, 0.4);
 }
 
 
