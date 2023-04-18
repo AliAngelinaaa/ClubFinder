@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +10,7 @@
     <title>Clubs Feed</title>
 </head>
 <body style="background-color: rgb(224, 213, 205);">
-    <nav id="navbar" class="navbar navbar-expand-lg" style="background-color: #800020;">
+    <nav id="navbar" class="navbar navbar-expand-lg" style="background-color: blue;">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">
             <img src="../magnifying_glass_white.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
@@ -33,14 +34,14 @@
         </ol>
     </nav>
 
-    <div id="search-bar" class="input-group m-1 p-0">
-        <input type="search" class="form-control opacity-50" aria-label="Search Bar" aria-describedby="button-addon2">
+    <div id="search-bar" class="input-group mb-1">
+        <input type="text" class="form-control opacity-50" aria-label="Search Bar" aria-describedby="button-addon2">
         <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
     </div>      
 
-    <div id="filter" class="btn-group m-1 p-0">
+    <div id="filter" class="btn-group m-1">
         <!-- <button type="button" class="btn opacity-75" style="background-color: rgb(19, 87, 221);">Filter</button> -->
-        <button type="button" class="btn dropdown-toggle filter-btn opacity-75" style="background-color: #800020;" id="filterr" data-bs-toggle="dropdown" aria-expanded="false">Filter </button>
+        <button type="button" class="btn bg-light dropdown-toggle filter-btn opacity-75" id="filterr" data-bs-toggle="dropdown" aria-expanded="false">Filter </button>
         <!-- <button type="button" class="btn dropdown-toggle dropdown-toggle-split opacity-50" style="background-color: rgb(19, 87, 221);" data-bs-toggle="dropdown" aria-expanded="false"> -->
         <ul class="dropdown-menu" aria-labelledby="filterr">
             <li><a class="dropdown-item" href="#">Location</a></li>
@@ -54,7 +55,7 @@
         <!-- <button class="btn dropdown-toggle opacity-75" style="background-color: rgb(19, 87, 221);" type="button" id="sort" data-bs-toggle="dropdown" aria-expanded="false">
             Sort By
         </button> -->
-        <button class="btn dropdown-toggle sort-btn opacity-75" style="background-color: #800020;" type="button" id="sort" data-bs-toggle="dropdown" aria-expanded="false">Sort By </button>
+        <button class="btn bg-light dropdown-toggle sort-btn opacity-75" type="button" id="sort" data-bs-toggle="dropdown" aria-expanded="false">Sort By </button>
         <ul class="dropdown-menu" aria-labelledby="sort">
             <li><a class="dropdown-item" href="#">Location</a></li>
             <li><a class="dropdown-item" href="#">Club Type</a></li>
@@ -62,19 +63,25 @@
     </div>
 
     <div id="content">
-        <a href="./CSClub.html" style="text-decoration: none;">
-            <div id="Computer Science Club" class="container rounded mt-4 p-0" style="background-color: #800020;">
+        <a href="./AccountingClub.html" style="text-decoration: none;">
+            <div id="Accounting" class="container rounded mt-4 p-0" style="background-color: blue;">
                 <div id="content-header" class="content-header rounded-top-2 fs-4 l-1">
-                        <div class="header-margin-left">Computer Science Club</div>
+                    <div class="header-margin-left" style="color: white;">Accounting</div>
                 </div>
                 <div id="content-details" class="content-details">
-                    <span class="position-absolute opacity-50 start-50"><img src="./cs.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                    <span class="position-absolute opacity-50 start-50"><img src="" alt="" class="rounded-circle" style="height: 10rem; width: 10rem;"></span>
                         <dl class="details-margin-left">
+                            <dt>Leaders</dt>
+                            <dd>
+                                <ul>
+                                    <li>Michelle Davidowitz</li>
+                                </ul>
+                            </dd>
                             <dt>Location</dt>
-                            <dd class="dd-margin-left">Old Ingersoll Basement Room 0317</dd>
+                            <dd class="dd-margin-left"></dd>
 
                             <dt>E-mail</dt>
-                            <dd class="dd-margin-left">contact@bccompsci.club</dd>
+                            <dd class="dd-margin-left">...</dd>
 
                             <dt>Upcoming Events</dt>
                             <dd>
@@ -89,27 +96,33 @@
         </a>
 
         <a href="" style="text-decoration: none;">
-            <div id="USG" class="container rounded mt-4 p-0" style="background-color: #800020;">
+            <div id="Animation" class="container rounded mt-4 p-0" style="background-color: blue;">
                 <div id="content-header" class="content-header rounded-top-2 fs-4">
-                        <div class="header-margin-left">Undergraduate Student Government</div>
+                        <div class="header-margin-left" style="color: white;">Animation</div>
                 </div>
                 <div id="content-details" class="content-details">
-                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
-                        <dl class="details-margin-left">
-                            <dt>Location</dt>
-                            <dd class="dd-margin-left">Old Ingersoll Basement Room 0317</dd>
+                    <span class="position-absolute opacity-50 start-50"><img src="" alt="" style="height: 10rem; width: 10rem;"></span>
+                    <dl class="details-margin-left">
+                        <dt>Leaders</dt>
+                        <dd>
+                            <ul>
+                                <li>Thomas Eaton</li>
+                            </ul>
+                        </dd>
+                        <dt>Location</dt>
+                        <dd class="dd-margin-left"></dd>
 
-                            <dt>E-mail</dt>
-                            <dd class="dd-margin-left">contact@bccompsci.club</dd>
+                        <dt>E-mail</dt>
+                        <dd class="dd-margin-left">...</dd>
 
-                            <dt>Upcoming Events</dt>
-                            <dd>
-                                <ul>
-                                    <li>1</li>
-                                    <li>2</li>
-                                </ul>
-                            </dd>
-                        </dl>
+                        <dt>Upcoming Events</dt>
+                        <dd>
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                            </ul>
+                        </dd>
+                    </dl>
                 </div>
             </div>
         </a>
