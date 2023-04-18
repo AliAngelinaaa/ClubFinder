@@ -4,8 +4,18 @@
     background-color: rgb(85, 97, 160);
 }
 
+.navbar-light-nycct{
+    font-family: Verdana-Bold;
+    color: rgb(250, 250, 250);
+    background-color: rgb(255, 227, 68);
+}
+
 .nav-link{
     color:rgb(227, 227, 227);
+}
+
+.nav-link-nycct{
+    color:rgb(250, 250, 250);
 }
 
 .nav-link:hover{
@@ -16,6 +26,11 @@
 .navbar-brand{
     font-size: 25px;
     color:rgb(227, 227, 227);
+}
+
+.navbar-brand-nycct{
+    font-size: 25px;
+    color:rgb(250, 250, 250);
 }
 
 .navbar-brand:hover, .navbar-brand:active:focus{
@@ -60,6 +75,57 @@
 .btn-primary-bc:active:focus{
     background-color: #5c0017;
     border-color:#5c0017;
+}
+
+.btn-primary-nycct{
+    font-family: Verdana-Bold;
+    color:rgb(250, 250, 250);
+    background-color: rgb(255, 227, 68);
+    border-color:rgb(255, 227, 68);
+}
+
+.btn-primary-nycct:hover{
+    background-color: rgb(252, 221, 46);
+    border-color:rgb(252, 221, 46);
+}
+
+.btn-primary-nycct:active:focus{
+    background-color: rgb(251, 214, 7);
+    border-color:rgb(251, 214, 7);
+}
+
+.btn-primary-kcc{
+    font-family: Verdana-Bold;
+    color:rgb(227, 227, 227);
+    background-color: rgb(38, 38, 184);
+    border-color:rgb(38, 38, 184);
+}
+
+.btn-primary-kcc:hover{
+    background-color: rgb(31, 31, 156);
+    border-color:rgb(31, 31, 156);
+}
+
+.btn-primary-kcc:active:focus{
+    background-color: rgb(31, 31, 166);
+    border-color:rgb(31, 31, 166);
+}
+
+.btn-primary-lcc{
+    font-family: Verdana-Bold;
+    color:rgb(227, 227, 227);
+    background-color: rgb(226, 53, 53);
+    border-color:rgb(226, 53, 53);
+}
+
+.btn-primary-lcc:hover{
+    background-color: rgb(199, 45, 45);
+    border-color:rgb(199, 45, 45);
+}
+
+.btn-primary-lcc:active:focus{
+    background-color: rgb(163, 33, 33);
+    border-color:rgb(163, 33, 33);
 }
 
 .input-group{
@@ -118,6 +184,24 @@
     background-color: rgba(128, 0, 32, 0.7);
 }
 
+.content-header-nycct{
+    font-family: Verdana-Bold;
+    color: rgb(54, 54, 54);
+    background-color: rgba(255, 227, 68, 0.7);
+}
+
+.content-header-kcc{
+    font-family: Verdana-Bold;
+    color: rgb(227, 227, 227);
+    background-color: rgb(38, 38, 184, 0.8);
+}
+
+.content-header-lcc{
+    font-family: Verdana-Bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(226, 53, 53, 0.8);
+}
+
 .content-details{
     font-family: Verdana;
     color: rgb(74, 74, 74);
@@ -142,8 +226,26 @@
     background-color: #800020;
 }
 
+.navbar-nycct{
+    font-family: Verdana-Bold;
+    color: rgb(250, 250, 250);
+    background-color: rgb(255, 227, 68);
+}
+
+.navbar-kcc{
+    font-family: Verdana-Bold;
+    color: rgb(227, 227, 227);
+    background-color: rgb(38, 38, 184);
+}
+
+.navbar-lcc{
+    font-family: Verdana-Bold;
+    color: rgb(227, 227, 227);
+    background-color: rgb(226, 53, 53);
+}
+
 .dropdown-item:hover{
-    background-color:rgba(128, 0, 32, 0.4);
+    background-color:rgb(246, 237, 227);
 }
 
 
