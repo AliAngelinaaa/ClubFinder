@@ -9,7 +9,7 @@
         <title>Clubs Feed</title>
     </head>
 <body style="background-color: rgb(224, 213, 205);">
-    <nav id="navbar" class="navbar navbar-expand-lg" style="background-color: red;">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-lcc">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">
             <img src="../magnifying_glass_white.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
@@ -35,12 +35,12 @@
     </nav>
 
     <div id="content"><div class = "container">
-        <div id="club-name" class="container rounded-4 mt-4 p-0 bg-light">
+        <div id="club-name" class="container rounded-4 mt-4 p-0 club-header">
             <h1 class="text-center p-3 mb-5">Chess Club</h1>
         </div>
 
         <div id="description" class="float-start d-inline-flex">
-            <h5>
+            <h5 class="club-description">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias quis iusto assumenda quasi dolores esse magnam aliquid sit, excepturi, velit, nemo maxime cum facilis sunt temporibus ipsa aut unde illum?
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam dignissimos perferendis cupiditate ratione deserunt ipsam, quo perspiciatis repellendus dolorem porro voluptatem aliquam aperiam sint minus at qui sed nostrum omnis!
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo magni dolore eum corrupti sequi magnam ipsa eveniet, rem, voluptas provident libero accusamus itaque voluptates modi fuga earum exercitationem error laudantium?
@@ -48,14 +48,14 @@
                 To learn more about the club, visit our website at <span class="fw-bold"><a href="">Club Link</a></span>
             </h5>
             <div id="image">
-                <img  style="width: 25rem; height: 25rem ;" src="./hooray.jpeg" alt="club-image">
+                <img  style="width: 25rem; height: 25rem; border-radius: 15px;" src="./hooray.jpeg" alt="club-image">
             </div>
         </div>
 
         <div id="events">
-            <h1>Events</h1>
+            <h1 class="events-header">Events</h1>
             <ul class="list-group list-group-horizontal">
-                <li class="list-group-item m-3">
+                <li class="list-group-item" style="border-radius: 25px;">
                     <div id="event-1">
                         <div class="card" style="width: 18rem;">
                             <img src="./event1.jpg" class="card-img-top" alt="...">
@@ -67,7 +67,7 @@
                     </div>
                 </li>
                 
-                <li class="list-group-item m-3">
+                <li class="list-group-item" style="border-radius: 25px;">
                     <div id="event-2">
                         <div class="card" style="width: 18rem;">
                             <img src="./event2.jpeg" class="card-img-top" alt="...">
@@ -79,7 +79,7 @@
                     </div>
                 </li>
 
-                <li class="list-group-item m-3">
+                <li class="list-group-item" style="border-radius: 25px;">
                     <div id="event-3">
                         <div class="card" style="width: 18rem;">
                             <img src="./event3.webp" class="card-img-top" alt="...">
@@ -98,10 +98,12 @@
         <hr>
         <br>
         <div id="contact" class="float-start">
-            <h6 class="fw-bolder">Contact Info</h6>
-            <br>
-            <h6>Location TBD</h6>
-            <h6><a href="#">...</a></h6>
+            <div style="font-family:Verdana;">
+                <h6 class="fw-bolder">Contact Info</h6>
+                <br>
+                <h6>Location TBD</h6>
+                <h6><a href="#">...</a></h6>
+            </div>
 
             <ul class="list-group list-group-horizontal">
                 <li class="list-group-item" style="background: none; border: none;">
@@ -127,7 +129,7 @@
             </ul>
         </div></div>
 
-        <button class="btn btn-primary float-end" type="submit">Join Now!</button>
+        <button class="btn btn-primary btn-primary-lcc float-end" type="submit">Join Now!</button>
     </div></div>
    
 

@@ -9,7 +9,7 @@
         <title>Clubs Feed</title>
     </head>
 <body style="background-color: rgb(224, 213, 205);">
-    <nav id="navbar" class="navbar navbar-expand-lg" style="background-color: #800020;">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-bc">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">
             <img src="../magnifying_glass_white.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
@@ -35,12 +35,12 @@
     </nav>
 
     <div id="content"><div class = "container">
-        <div id="club-name" class="container rounded-4 mt-4 p-0 bg-light">
+        <div id="club-name" class="container rounded-4 mt-4 p-0 club-header">
             <h1 class="text-center p-3 mb-5">Computer Science Club</h1>
         </div>
 
         <div id="description" class="float-start d-inline-flex">
-            <h5>
+            <h5 class="club-description">
                 The Brooklyn College Computer Science Club is Brooklyn College's premier student-led, community-first computer science community where students interested in 
                 technology come together to learn and grow in a safe, warm, and welcoming environment. Together as a community, we share our knowledge and offer advice to each other, 
                 form teams to build projects and attend hackathons, discuss the latest trends and technologies, and more! No matter what your current programming experience is or whether 
@@ -49,16 +49,16 @@
                 To learn more about the club, visit our website at <span class="fw-bold"><a href="https://bccompsci.club">BC Clubs</a></span>
             </h5>
             <div id="image">
-                <img  style="width: 25rem; height: 25rem ;" src="./clubimg.jpg" alt="club-image">
+                <img  style="width: 30rem; height: 20rem; border-radius: 15px;" src="./clubimg.jpg" alt="club-image">
             </div>
         </div>
 
         <div id="events">
-            <h1>Events</h1>
+            <h1 class="events-header">Events</h1>
             <ul class="list-group list-group-horizontal">
-                <li class="list-group-item m-3">
+                <li class="list-group-item" style="border-radius: 25px;">
                     <div id="event-1">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="./event1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                             <h5 class="card-title">Event 1</h5>
@@ -68,9 +68,9 @@
                     </div>
                 </li>
                 
-                <li class="list-group-item m-3">
+                <li class="list-group-item" style="border-radius: 25px;">
                     <div id="event-2">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="./event2.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
                             <h5 class="card-title">Event 2</h5>
@@ -80,9 +80,9 @@
                     </div>
                 </li>
 
-                <li class="list-group-item m-3">
+                <li class="list-group-item" style="border-radius: 25px;">
                     <div id="event-3">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img src="./event3.webp" class="card-img-top" alt="...">
                             <div class="card-body">
                             <h5 class="card-title">Event 3</h5>
@@ -99,10 +99,12 @@
         <hr>
         <br>
         <div id="contact" class="float-start">
-            <h6 class="fw-bolder">Contact Info</h6>
-            <br>
-            <h6>Old Ingersoll Basement 0317</h6>
-            <h6><a href="#">contact@bcomplsci.club</a></h6>
+            <div style="font-family:Verdana;">
+                <h6 class="fw-bolder">Contact Info</h6>
+                <br>
+                <h6>Old Ingersoll Basement 0317</h6>
+                <h6><a href="#">contact@bcomplsci.club</a></h6>
+            </div>
 
             <ul class="list-group list-group-horizontal">
                 <li class="list-group-item" style="background: none; border: none;">
@@ -128,7 +130,7 @@
             </ul>
         </div>
 
-        <button class="btn btn-primary float-end" type="submit">Join Now!</button>
+        <button class="btn btn-primary btn-primary-bc float-end" type="submit">Join Now!</button>
     </div></div>
    
 
