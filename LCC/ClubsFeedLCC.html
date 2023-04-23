@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href="../ClubFinder.css" rel="stylesheet" type="text/css">
     <title>Clubs Feed</title>
 </head>
 <body style="background-color: rgb(224, 213, 205);">
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-lcc ">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-lcc">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">
             <img src="../magnifying_glass_white.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
@@ -33,14 +33,14 @@
         </ol>
     </nav>
 
-    <div id="search-bar" class="input-group mb-1 ">
-        <input type="text" class="form-control opacity-50" aria-label="Search Bar" aria-describedby="button-addon2">
+    <div id="search-bar" class="input-group m-2 p-0" >
+        <input type="search" class="form-control opacity-50" aria-label="Search Bar" aria-describedby="button-addon2">
         <button class="btn btn-primary btn-primary-lcc" type="button" id="button-addon2">Search</button>
     </div>      
 
-    <div id="filter" class="btn-group m-1">
+    <div id="filter" class="btn-group m-1 p-0">
         <!-- <button type="button" class="btn opacity-75" style="background-color: rgb(19, 87, 221);">Filter</button> -->
-        <button type="button" class="btn bg-light dropdown-toggle filter-btn opacity-75" id="filterr" data-bs-toggle="dropdown" aria-expanded="false">Filter </button>
+        <button type="button" class="btn dropdown-toggle filter-btn-bc" id="filterr" data-bs-toggle="dropdown" aria-expanded="false">Filter </button>
         <!-- <button type="button" class="btn dropdown-toggle dropdown-toggle-split opacity-50" style="background-color: rgb(19, 87, 221);" data-bs-toggle="dropdown" aria-expanded="false"> -->
         <ul class="dropdown-menu" aria-labelledby="filterr">
             <li><a class="dropdown-item" href="#">Location</a></li>
@@ -54,7 +54,7 @@
         <!-- <button class="btn dropdown-toggle opacity-75" style="background-color: rgb(19, 87, 221);" type="button" id="sort" data-bs-toggle="dropdown" aria-expanded="false">
             Sort By
         </button> -->
-        <button class="btn bg-light dropdown-toggle sort-btn opacity-75" type="button" id="sort" data-bs-toggle="dropdown" aria-expanded="false">Sort By </button>
+        <button class="btn dropdown-toggle sort-btn-bc " type="button" id="sort" data-bs-toggle="dropdown" aria-expanded="false">Sort By </button>
         <ul class="dropdown-menu" aria-labelledby="sort">
             <li><a class="dropdown-item" href="#">Location</a></li>
             <li><a class="dropdown-item" href="#">Club Type</a></li>
@@ -62,25 +62,19 @@
     </div>
 
     <div id="content">
-        <a href="./ChessClub.html" style="text-decoration: none;">
-            <div id="Chess Club" class="container rounded mt-4 p-0">
-                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4 l-1">
-                    <div class="header-margin-left">Chess Club</div>
+        <a href="./BSALCC.html" style="text-decoration: none;">
+            <div id="BSALCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Bangladesh Student Association (BSA) Club</div>
                 </div>
                 <div id="content-details" class="content-details">
-                    <span class="position-absolute opacity-50 start-50"><img src="" alt="" class="rounded-circle" style="height: 10rem; width: 10rem;"></span>
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
                         <dl class="details-margin-left">
-                            <dt>Leaders</dt>
-                            <dd>
-                                <ul>
-                                    <li>Regina Varin-Mignano</li>
-                                </ul>
-                            </dd>
                             <dt>Location</dt>
-                            <dd class="dd-margin-left">C-414</dd>
+                            <dd class="dd-margin-left">E-129</dd>
 
                             <dt>E-mail</dt>
-                            <dd class="dd-margin-left">...</dd>
+                            <dd class="dd-margin-left">sjaman@lagcc.cuny.edu</dd>
 
                             <dt>Upcoming Events</dt>
                             <dd>
@@ -93,36 +87,653 @@
                 </div>
             </div>
         </a>
+        <a href="./ChessClub.html" style="text-decoration: none;">
+            <div id="ChessClubLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Chess Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">Fridays: C-414</dd>
 
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">rvarin-mignano@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
         <a href="" style="text-decoration: none;">
-            <div id="Film Club" class="container rounded mt-4 p-0">
+            <div id="ChineseStudentClubLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Chinese Student Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">C-234</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">tchen@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="CreativeWritingClubLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Creative Writing Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">C-446</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">rspencer@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="CriminalJusticeClubLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Criminal Justice Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">C-426</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">khollar-gregory@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="ClimateRealityClubLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Climate Reality Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">M-107</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">kmark@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="EconomicsClubLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Economics Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">C-456</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">clai@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="FilmClubLCC" class="container rounded mt-4 p-0">
                 <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
                         <div class="header-margin-left">Film Club</div>
                 </div>
                 <div id="content-details" class="content-details">
-                    <span class="position-absolute opacity-50 start-50"><img src="" alt="" style="height: 10rem; width: 10rem;"></span>
-                    <dl class="details-margin-left">
-                        <dt>Leaders</dt>
-                        <dd>
-                            <ul>
-                                <li>TJason Schafer</li>
-                                <li>David Stott</li>
-                            </ul>
-                        </dd>
-                        <dt>Location</dt>
-                        <dd class="dd-margin-left">E-113</dd>
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">E-113</dd>
 
-                        <dt>E-mail</dt>
-                        <dd class="dd-margin-left">...</dd>
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">jschafer@lagcc.cuny.edu</dd>
 
-                        <dt>Upcoming Events</dt>
-                        <dd>
-                            <ul>
-                                <li>1</li>
-                                <li>2</li>
-                            </ul>
-                        </dd>
-                    </dl>
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="FinanceClubLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Finance Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">B-209</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">afrancis@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="FineArtsClubLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Fine Arts Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">MB-70</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">afernandez@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="JapanEntertainmentClubLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Japan Entertainment Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">Wednesdays & Fridays, M-152</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">tnagano@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="LHILCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">LaGuardia Humanitarian Initiative (LHI) Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">C-448</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">dbayrakdar@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="LPNLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Licensed Practical Nursing (LPN) Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">M-136</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">misrailova@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="NCMLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Nutrition & Culinary Management (NCM) Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">M-156</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">nfernandes@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="PhotographyClubLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Photography Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">C-466</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">mdrennan@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="PTALCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Physical Therapist Assistant (PTA) Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">E-264</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">dengel@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="QueerAndFierceLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Queer And Fierce</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">Thursdays: MB-10B</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">ntosh@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="RadTechLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Radiologic Technology (Rad Tech) Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">M-158</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">vbuitragobrown@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="ComputerScienceClubLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Red Hawk Engineering & Computer Science Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">E-260</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">nhosannah@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="RNClubLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Registered Nurse (RN) Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">M-151</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">dsiergie-munsey@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="STEMClubLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Science, Technology, Engineering & Mathematics (STEM) Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">M-155</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">rgupta@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="SOTALCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Student Occupational Therapy Assistant (SOTA) Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">M-161</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">lhindle@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="TabletopLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Tabletop Gaming Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">C-236</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">dflood@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="TheatreClubLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Theatre Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">E-258</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">jcarmona@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="TRSALCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Therapeutic Recreation Student Association (TRSA) Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">C-722</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">tbattle@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="VetTechLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Veterinary Technology (Vet Tech) Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">Fridays, C-443</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">larbach@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                </div>
+            </div>
+        </a>
+        <a href="" style="text-decoration: none;">
+            <div id="WITLCC" class="container rounded mt-4 p-0">
+                <div id="content-header" class="content-header-lcc rounded-top-2 fs-4">
+                        <div class="header-margin-left">Women In Tech (WIT) Club</div>
+                </div>
+                <div id="content-details" class="content-details">
+                    <span class="position-absolute opacity-50 start-50"><img src="./usg.png" alt="" style="height: 10rem; width: 10rem;"></span>
+                        <dl class="details-margin-left">
+                            <dt>Location</dt>
+                            <dd class="dd-margin-left">E-225</dd>
+
+                            <dt>E-mail</dt>
+                            <dd class="dd-margin-left">nxu@lagcc.cuny.edu</dd>
+
+                            <dt>Upcoming Events</dt>
+                            <dd>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                            </dd>
+                        </dl>
                 </div>
             </div>
         </a>
