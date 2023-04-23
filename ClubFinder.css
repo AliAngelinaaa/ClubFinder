@@ -1,3 +1,6 @@
+#navbar{
+    display: flex;
+}
 .navbar-light{
     font-family: Verdana-Bold;
     color:rgb(227, 227, 227);
