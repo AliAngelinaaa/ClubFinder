@@ -4,7 +4,8 @@ const clubs = [
     leaders: ["Sada Hye Jaman"],
     location: "E-129",
     email: "sjaman@lagcc.cuny.edu",
-    upcomingEvents: ["1", "2"]
+    upcomingEvents: ["1", "2"],
+    filter: "cultural"
   },
   {
     name: "Chess Club",
@@ -15,7 +16,7 @@ const clubs = [
   },
   {
     name: "Chinese Student Club",
-    leaders: ["Tao Chen","Jian Fang"],
+    leaders: ["Tao Chen", "Jian Fang"],
     location: "C-234",
     email: "tchen@lagcc.cuny.edu",
     upcomingEvents: ["1", "2"]
@@ -120,14 +121,14 @@ const clubs = [
   },
   {
     name: "Radiologic Technology (Rad Tech) Club",
-    leaders: ["Victoria Buitrago Brown","Theresa Licari"],
+    leaders: ["Victoria Buitrago Brown", "Theresa Licari"],
     location: "M-158",
     email: "vbuitragobrown@lagcc.cuny.edu",
     upcomingEvents: ["1", "2"]
   },
   {
     name: "Red Hawk Engineering & Computer Science Club",
-    leaders: ["Alaa Darabseh","Nathan Hosannah"],
+    leaders: ["Alaa Darabseh", "Nathan Hosannah"],
     location: "E-260",
     email: "nhosannah@lagcc.cuny.edu",
     upcomingEvents: ["1", "2"]
@@ -141,7 +142,7 @@ const clubs = [
   },
   {
     name: "Science, Technology, Engineering & Mathematics (STEM) Club",
-    leaders: ["Maria Entezari","Richa Gupta"],
+    leaders: ["Maria Entezari", "Richa Gupta"],
     location: "M-155",
     email: "rgupta@lagcc.cuny.edu",
     upcomingEvents: ["1", "2"]
@@ -176,14 +177,14 @@ const clubs = [
   },
   {
     name: "Veterinary Technology (Vet Tech) Club",
-    leaders: ["Lara Arbach","Lisa Flores"],
+    leaders: ["Lara Arbach", "Lisa Flores"],
     location: "Fridays, C-443",
     email: "larbach@lagcc.cuny.edu",
     upcomingEvents: ["1", "2"]
   },
   {
     name: "Women In Tech (WIT) Club",
-    leaders: ["Malgorzata Marciniak", "Doyel Pal", "Na Xu","Yun Ye"],
+    leaders: ["Malgorzata Marciniak", "Doyel Pal", "Na Xu", "Yun Ye"],
     location: "E-225",
     email: "nxu@lagcc.cuny.edu",
     upcomingEvents: ["1", "2"]
@@ -195,8 +196,8 @@ const clubsContainer = document.getElementById("clubs-container");
 clubs.forEach(club => {
   const clubHtml = `
     <a href="./${club.name.split(" ").join("")}Club.html" style="text-decoration: none;">
-      <div id="${club.name}" class="club-item container content-container rounded mt-4 p-0">
-        <div id="content-header" class="content-header rounded-top-2 fs-4 l-1">
+      <div id="${club.name}" class="club-item container content-container rounded mt-4 p-0" data-category="${club.filter}">
+        <div id="content-header" class="content-header-lcc rounded-top-2 fs-4 l-1">
           <div class="club-name header-margin-left">${club.name}</div>
         </div>
         <div id="content-details" class="content-details">
@@ -223,6 +224,6 @@ clubs.forEach(club => {
       </div>
     </a>
   `;
-  
+
   clubsContainer.innerHTML += clubHtml;
 });

@@ -155,8 +155,8 @@ const clubsContainer = document.getElementById("clubs-container");
 clubs.forEach(club => {
   const clubHtml = `
     <a href="./${club.name.split(" ").join("")}Club.html" style="text-decoration: none;">
-      <div id="${club.name}" class="club-item container content-container rounded mt-4 p-0">
-        <div id="content-header" class="content-header rounded-top-2 fs-4 l-1">
+      <div id="${club.name}" class="club-item container content-container rounded mt-4 p-0" data-category="${club.filter}">
+        <div id="content-header" class="content-header-lcc rounded-top-2 fs-4 l-1">
           <div class="club-name header-margin-left">${club.name}</div>
         </div>
         <div id="content-details" class="content-details">

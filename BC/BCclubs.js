@@ -69,85 +69,6 @@ const clubs = [
     email: "",
     upcomingEvents: []
   },
-  {
-    name: "Beta Beta Beta Honor Society",
-    leaders: ["Britany Morocho", "Emely Hernandez", "Naoroz Mahmood", "Shamara Smellie"],
-    location: "City College of New York",
-    email: "b3honor@gtest.ccny.cuny.edu",
-    upcomingEvents: []
-  },
-  
-  {
-    name: "Biomedical Asian Health Coalition",
-    leaders: ["Jenny Chung", "Calista Kee", "Darren Cui", "Lexi Chen"],
-    location: "Sophie Davis School of Biomedical Education",
-    email: "bahc@gtest.ccny.cuny.edu",
-    upcomingEvents: []
-  },
-  
-  {
-    name: "Biomedical Engineering Society",
-    leaders: ["Hana Kassem", "Mohigul Nasimova", "Andre Deosaran", "Daniel Khalil"],
-    location: "City College of New York",
-    email: "bmes@gtest.ccny.cuny.edu",
-    upcomingEvents: []
-  },
-  
-  {
-    name: "Biotechnology Club",
-    leaders: ["Tabassum Sami", "Christina Ramsarran", "Joanna Thygaraj", "Kristen Barsoum"],
-    location: "City College of New York",
-    email: "biotech@gtest.ccny.cuny.edu",
-    upcomingEvents: []
-  },
-  
-  {
-    name: "Black Student Union",
-    leaders: ["Max Garcia", "Jaylen Salvatto", "Omosefe Ikpia", "Halima Jagana"],
-    location: "City College of New York",
-    email: "@gtest.ccny.cuny.edu",
-    upcomingEvents: []
-  },
-  
-  {
-    name: "Caribbean Students' Association",
-    leaders: ["Kailah Hyndman", "Alanis Omar", "Deborah Cobourne", "Jonel Rainford"],
-    location: "City College of New York",
-    email: "@gtest.ccny.cuny.edu",
-    upcomingEvents: []
-  },
-  
-  {
-    name: "CCNY Amateur Radio Society",
-    leaders: ["Benjamin Trinh", "Gregory Sanchez", "Mohammad Arif", "Ahmad Adil"],
-    location: "City College of New York",
-    email: "arc@gtest.ccny.cuny.edu",
-    upcomingEvents: []
-  },
-  
-  {
-    name: "CCNY Arts and Crafts",
-    leaders: ["Amy Ho", "Nathaly Castillo", "Aakanksha Maharjan", "Moselle Carrero"],
-    location: "City College of New York",
-    email: "ccnyartsandcrafts@gtest.ccny.cuny.edu",
-    upcomingEvents: ["Event 1", "Event 2"]
-  },
-  
-  {
-    name: "CCNY Association for Women in Mathematics",
-    leaders: ["Valentina Tillman", "Veronica Koval", "Jenni Howell", "Rhaldni Sayaman"],
-    location: "City College of New York",
-    email: "@gtest.ccny.cuny.edu",
-    upcomingEvents: []
-  },
-  
-  {
-    name: "CCNY Circle K",
-    leaders: [],
-    location: "City College of New York",
-    email: "",
-    upcomingEvents: []
-  }
   
 ];
 
@@ -156,8 +77,8 @@ const clubsContainer = document.getElementById("clubs-container");
 clubs.forEach(club => {
   const clubHtml = `
     <a href="./${club.name.split(" ").join("")}Club.html" style="text-decoration: none;">
-      <div id="${club.name}" class="club-item container content-container rounded mt-4 p-0">
-        <div id="content-header" class="content-header rounded-top-2 fs-4 l-1">
+      <div id="${club.name}" class="club-item container content-container rounded mt-4 p-0" data-category="${club.filter}">
+        <div id="content-header" class="content-header-lcc rounded-top-2 fs-4 l-1">
           <div class="club-name header-margin-left">${club.name}</div>
         </div>
         <div id="content-details" class="content-details">
@@ -184,6 +105,6 @@ clubs.forEach(club => {
       </div>
     </a>
   `;
-  
+
   clubsContainer.innerHTML += clubHtml;
 });
