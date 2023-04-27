@@ -8,7 +8,7 @@ body {
 
 .navbar-light {
     font-family: Verdana-Bold;
-    color: rgb(227, 227, 227);
+    color: rgb(255, 255, 255);
     background-color: rgb(76, 90, 151);
 }
 
@@ -236,14 +236,15 @@ body {
 .club-header {
     font-family: Verdana-Bold;
     color: rgb(38, 38, 38);
-    background-color: rgb(238, 235, 230);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 4px rgb(218, 218, 218);
 }
 
 .club-description {
     font-family: Verdana;
     color: rgb(38, 38, 38);
     font-size: 18px;
-    margin-right: 10px;
+    margin-right: 6%;
 }
 
 .card-title {
@@ -260,7 +261,7 @@ body {
 
 .card {
     width: 18rem;
-    background-color: rgb(238, 235, 230);
+    background-color: rgb(255, 255, 255);
     margin: 5px;
     border-radius: 25px;
     border-color: transparent;
@@ -270,10 +271,11 @@ body {
     border-radius: 25px;
 }
 
-.list-group-item {
-    background-color: rgb(238, 235, 230);
+.list-group-item-card {
+    background-color: rgb(255, 255, 255);
     border-radius: 25px;
     margin: 15px;
+    box-shadow: 1px 1px 4px rgb(218, 218, 218);
 }
 
 .events-header {
@@ -281,4 +283,9 @@ body {
     color: rgb(38, 38, 38);
     font-size: 28px;
     margin-top: 20px;
+}
+
+.center{
+    align-items: center;
+    justify-content: center;
 }
