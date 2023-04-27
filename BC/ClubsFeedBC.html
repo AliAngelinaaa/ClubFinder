@@ -38,16 +38,14 @@
         <button class="btn btn-primary btn-primary-bc" type="button" id="button-addon2">Search</button>
     </div>      
 
-    <div id="filter" class="btn-group m-1 p-0">
-        <!-- <button type="button" class="btn opacity-75" style="background-color: rgb(19, 87, 221);">Filter</button> -->
-        <button type="button" class="btn dropdown-toggle filter-btn" id="filterr" data-bs-toggle="dropdown" aria-expanded="false">Filter </button>
-        <!-- <button type="button" class="btn dropdown-toggle dropdown-toggle-split opacity-50" style="background-color: rgb(19, 87, 221);" data-bs-toggle="dropdown" aria-expanded="false"> -->
-        <ul class="dropdown-menu" aria-labelledby="filterr">
-            <li><a class="dropdown-item" href="#">Location</a></li>
-            <li><a class="dropdown-item" href="#">Academics</a></li>
-            <li><a class="dropdown-item" href="#">Cultural</a></li>
-            <li><a class="dropdown-item" href="#">Art</a></li>
-        </ul>
+    <div id="filter" class="btn-group m-1">
+        <select id="filter-select" class="form-select opacity-75" aria-label="Filter dropdown">
+            <option selected disabled>Filter By</option>
+            <option value="location">Location</option>
+            <option value="academics">Academics</option>
+            <option value="cultural">Cultural</option>
+            <option value="arts">Arts</option>
+        </select>
     </div>
 
     <div id="sort-by" class="dropdown d-inline">
