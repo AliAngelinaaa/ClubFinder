@@ -40,15 +40,13 @@
     </div>      
 
     <div id="filter" class="btn-group m-1">
-        <!-- <button type="button" class="btn opacity-75" style="background-color: rgb(19, 87, 221);">Filter</button> -->
-        <button type="button" class="btn bg-light dropdown-toggle filter-btn opacity-75" id="filterr" data-bs-toggle="dropdown" aria-expanded="false">Filter </button>
-        <!-- <button type="button" class="btn dropdown-toggle dropdown-toggle-split opacity-50" style="background-color: rgb(19, 87, 221);" data-bs-toggle="dropdown" aria-expanded="false"> -->
-        <ul class="dropdown-menu" aria-labelledby="filterr">
-            <li><a class="dropdown-item" href="#">Location</a></li>
-            <li><a class="dropdown-item" href="#">Academics</a></li>
-            <li><a class="dropdown-item" href="#">Cultural</a></li>
-            <li><a class="dropdown-item" href="#">Art</a></li>
-        </ul>
+        <select id="filter-select" class="form-select opacity-75" aria-label="Filter dropdown">
+            <option selected disabled>Filter By</option>
+            <option value="location">Location</option>
+            <option value="academics">Academics</option>
+            <option value="cultural">Cultural</option>
+            <option value="arts">Arts</option>
+        </select>
     </div>
 
     <div id="sort-by" class="dropdown d-inline">
@@ -64,7 +62,7 @@
 
     <div id="content">
         <a href="./ACMClub.html" style="text-decoration: none;">
-            <div id="Association for Computing Machinery" class="club-item container content-container rounded mt-4 p-0">
+            <div id="Association for Computing Machinery" class="club-item container content-container rounded mt-4 p-0" data-category="academics">
                 <div id="content-header" class="content-header rounded-top-2 fs-4 l-1">
                     <div class="club-name header-margin-left">Association for Computing Machinery</div>
                 </div>
@@ -99,7 +97,7 @@
         </a>
 
         <a href="" style="text-decoration: none;">
-            <div id="CCNY Arts and Crafts Club" class="club-item container content-container rounded mt-4 p-0">
+            <div id="CCNY Arts and Crafts Club" class="club-item container content-container rounded mt-4 p-0" data-category="arts">
                 <div id="content-header" class="content-header rounded-top-2 fs-4">
                         <div class="club-name header-margin-left">CCNY Arts and Crafts Club</div>
                 </div>
