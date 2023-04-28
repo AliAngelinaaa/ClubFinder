@@ -1,51 +1,51 @@
 const clubs = [
   {
-    name: "Access Futures Club",
+    name: "Computer Science Club",
     leaders: ["Adrian Watson", "Janessa Graham", "Luis Cortazar", "Stephanie Soto"],
-    location: "City College of New York",
-    email: "accessfutures@gtest.ccny.cuny.edu",
+    location: "Old Ingersoll Basement Room 0317",
+    email: "contact@bccompsci.club",
     upcomingEvents: []
   },
   {
-    name: "African Student Union",
-    leaders: ["Chidera Obi-Eyisi", "Jaden Hodges", "Shafau Sanni", "Chinaza Amaefule"],
-    location: "City College of New York",
-    email: "asu@gtest.ccny.cuny.edu",
+    name: "Undergraduate Student Government",
+    leaders: [],
+    location: "",
+    email: "",
     upcomingEvents: []
   },
   {
-    name: "Alpha Phi Alpha Fraternity, Inc",
-    leaders: ["Obinna Agwuncha", "Syed Tajria", "Cameron Philips", "Delorian Millie"],
-    location: "City College of New York",
-    email: "alphaphialpha@gtest.ccny.cuny.edu",
+    name: "Accounting Society",
+    leaders: ["Professor Daniel Tinkelman"],
+    location: "",
+    email: "bcafsociety@gmail.com",
     upcomingEvents: []
   },
   {
-    name: "American Institute of Architecture Students (AIAS)",
-    leaders: ["Danyel Hueyopan", "Labiba Nazrul", "Sidney Mauricio", "Fion Li"],
-    location: "City College of New York",
-    email: "aias@gtest.ccny.cuny.edu",
+    name: "American Medical Students Association",
+    leaders: ["Dr. Silbering", "Israa Ismail","Emily Yang", "Alvin John"],
+    location: "",
+    email: "bcamsa@gmail.com",
     upcomingEvents: []
   },
   {
-    name: "American Medical Women's Association in the City College of New York",
-    leaders: ["Ayesha Khan", "Fisola Aruleba", "Mariam Quraishi", "Rodyna Mostafa"],
-    location: "City College of New York",
-    email: "amwa_undergrad@gtest.ccny.cuny.edu",
+    name: "Brooklyn College Anime and Manga Corps",
+    leaders: ["Hamilton Raymond"],
+    location: "West End Building Room 137",
+    email: "bcanimemanga@gmail.com",
     upcomingEvents: []
   },
   {
-    name: "American Society of Civil Engineers",
-    leaders: ["Adel Alotibe", "Samantha Castro", "Ruben Martinez", "Justin Chen"],
-    location: "City College of New York",
-    email: "asce@gtest.ccny.cuny.edu",
+    name: "Brooklyn College Esports and Gaming Club",
+    leaders: ["Hamilton Raymond"],
+    location: "",
+    email: "bcesportsandgamingclub@gmail.com",
     upcomingEvents: []
   },
   {
-    name: "Association for Computing Machinery",
-    leaders: ["Meherun Mim", "Tanim Islam", "Abdul Rafi", "Najia Jahan"],
-    location: "City College of New York",
-    email: "acm@gtest.ccny.cuny.edu",
+    name: "CUNY Uzbek Society",
+    leaders: [""],
+    location: "",
+    email: "info@cunyuzbeksociety.com",
     upcomingEvents: []
   },
   {
@@ -78,7 +78,7 @@ clubs.forEach(club => {
   const clubHtml = `
     <a href="./${club.name.split(" ").join("")}Club.html" style="text-decoration: none;">
       <div id="${club.name}" class="club-item container content-container rounded mt-4 p-0" data-category="${club.filter}">
-        <div id="content-header" class="content-header-lcc rounded-top-2 fs-4 l-1">
+        <div id="content-header" class="content-header-bc rounded-top-2 fs-4 l-1">
           <div class="club-name header-margin-left">${club.name}</div>
         </div>
         <div id="content-details" class="content-details">

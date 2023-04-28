@@ -19,7 +19,8 @@ const clubs = [
     leaders: ["Tao Chen", "Jian Fang"],
     location: "C-234",
     email: "tchen@lagcc.cuny.edu",
-    upcomingEvents: ["1", "2"]
+    upcomingEvents: ["1", "2"],
+    filter: "cultural"
   },
   {
     name: "Creative Writing Club",
@@ -54,7 +55,8 @@ const clubs = [
     leaders: ["Jason Schafer", " David Stott"],
     location: "E-113",
     email: "jschafer@lagcc.cuny.edu",
-    upcomingEvents: [1, 2]
+    upcomingEvents: [1, 2],
+    filter: ["entertainment"]
   },
   {
     name: "Finance Club",
@@ -68,14 +70,16 @@ const clubs = [
     leaders: ["Arianne Fernandez"],
     location: "D-201",
     email: "mrossi@lagcc.cuny.edu",
-    upcomingEvents: [1, 2]
+    upcomingEvents: [1, 2],
+    filter: ["arts"]
   },
   {
     name: "Japan Entertainment Club",
     leaders: ["Tomonori Nagano"],
     location: "Wednesdays & Fridays, M-152",
     email: "tnagano@lagcc.cuny.edu",
-    upcomingEvents: [1, 2]
+    upcomingEvents: [1, 2],
+    filter: "cultural"
   },
   {
     name: "LaGuardia Humanitarian Initiative (LHI) Club",
@@ -103,7 +107,8 @@ const clubs = [
     leaders: ["Maureen Drennan"],
     location: "	C-466",
     email: "mrossi@lagcc.cuny.edu",
-    upcomingEvents: [1, 2]
+    upcomingEvents: [1, 2],
+    filter: ["arts"]
   },
   {
     name: "Physical Therapist Assistant (PTA) Club",
@@ -131,7 +136,8 @@ const clubs = [
     leaders: ["Alaa Darabseh", "Nathan Hosannah"],
     location: "E-260",
     email: "nhosannah@lagcc.cuny.edu",
-    upcomingEvents: ["1", "2"]
+    upcomingEvents: ["1", "2"],
+    filter: "academics"
   },
   {
     name: "Registered Nurse (RN) Club",
@@ -145,7 +151,8 @@ const clubs = [
     leaders: ["Maria Entezari", "Richa Gupta"],
     location: "M-155",
     email: "rgupta@lagcc.cuny.edu",
-    upcomingEvents: ["1", "2"]
+    upcomingEvents: ["1", "2"],
+    filter: "academics"
   },
   {
     name: "Student Occupational Therapy Assistant (SOTA) Club",
@@ -166,7 +173,8 @@ const clubs = [
     leaders: ["Jessica Carmona", "Stefanie Sertich"],
     location: "E-258",
     email: "jcarmona@lagcc.cuny.edu",
-    upcomingEvents: ["1", "2"]
+    upcomingEvents: ["1", "2"],
+    filter: ["arts"]
   },
   {
     name: "Therapeutic Recreation Student Association (TRSA) Club",
@@ -187,7 +195,8 @@ const clubs = [
     leaders: ["Malgorzata Marciniak", "Doyel Pal", "Na Xu", "Yun Ye"],
     location: "E-225",
     email: "nxu@lagcc.cuny.edu",
-    upcomingEvents: ["1", "2"]
+    upcomingEvents: ["1", "2"],
+    filter: "academics"
   }
 ];
 
