@@ -49,10 +49,10 @@ const clubs = [
     upcomingEvents: []
   },
   {
-    name: "Badminton Club",
-    leaders: ["Shahriyar Islam", "Mahim Rahman", "Shafin Rehman", "Sajida Sultana"],
-    location: "City College of New York",
-    email: "@gtest.ccny.cuny.edu",
+    name: "Graduate Student Organization",
+    leaders: ["Dr. Ronald Jackson", "Veronica McFarland", "Doris Park", "Jaida Tomlinson"],
+    location: "Student Center Room 309",
+    email: "Officeassistant.bcgso@gmail.com",
     upcomingEvents: []
   },
   {
