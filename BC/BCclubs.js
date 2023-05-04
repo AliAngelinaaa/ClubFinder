@@ -8,7 +8,7 @@ const clubs = [
       'Jaida Tomlinson'],
     email:'officeassistant.bcgso@gmail.com',
     upcomingEvents: [],
-    type: 'academic'
+    filter: 'student-life'
   },
   {
     name:'Mathematics Club of Brooklyn College',
@@ -18,7 +18,7 @@ const clubs = [
     "Khurram Ali"],
     email:'bcmathclub@gmail.com',
     upcomingEvents: [],
-    type: 'academic'
+    filter: 'academic'
   },
   {
     name:'Mock Trial and Moot Court Team',
@@ -26,7 +26,7 @@ const clubs = [
     'Evelina Safanova'],
     email:'brooklyncollege.mocktrial@gmail.com',
     upcomingEvents: [],
-    type: 'civil'
+    filter: 'civil'
   },
   {
     name: "Computer Science Club",
@@ -34,7 +34,7 @@ const clubs = [
     location: "Old Ingersoll Basement Room 0317",
     email: "contact@bccompsci.club",
     upcomingEvents: [],
-    type: 'academic'
+    filter: 'academic'
   },
   {
     name: "Undergraduate Student Government",
@@ -42,7 +42,7 @@ const clubs = [
     location: "",
     email: "",
     upcomingEvents: [],
-    type: 'civil'
+    filter: 'civil'
   },
   {
     name: "Accounting Society",
@@ -50,7 +50,7 @@ const clubs = [
     location: "",
     email: "bcafsociety@gmail.com",
     upcomingEvents: [],
-    type: 'academic'
+    filter: 'academic'
   },
   {
     name: "American Medical Students Association",
@@ -58,7 +58,7 @@ const clubs = [
     location: "",
     email: "bcamsa@gmail.com",
     upcomingEvents: [],
-    type: 'academic'
+    filter: 'academic'
   },
   {
     name: "Brooklyn College Anime and Manga Corps",
@@ -66,7 +66,7 @@ const clubs = [
     location: "West End Building Room 137",
     email: "bcanimemanga@gmail.com",
     upcomingEvents: [],
-    type: 'student-life'
+    filter: 'student-life'
   },
   {
     name: "Brooklyn College Esports and Gaming Club",
@@ -74,7 +74,7 @@ const clubs = [
     location: "",
     email: "bcesportsandgamingclub@gmail.com",
     upcomingEvents: [],
-    type: 'student-life'
+    filter: 'student-life'
   },
   {
     name: "CUNY Uzbek Society",
@@ -82,7 +82,15 @@ const clubs = [
     location: "",
     email: "info@cunyuzbeksociety.com",
     upcomingEvents: [],
-    type: 'civil'
+    filter: 'student-life'
+  },
+  {
+    name: "Graduate Student Organization",
+    leaders: ["Dr. Ronald Jackson", "Veronica McFarland", "Doris Park", "Jaida Tomlinson"],
+    location: "Student Center Room 309",
+    email: "Officeassistant.bcgso@gmail.com",
+    upcomingEvents: [],
+    filter: 'civil'
   },
   {
     name: "Bangladesh Student Association of City College of New York",
@@ -90,7 +98,7 @@ const clubs = [
     location: "City College of New York",
     email: "bsa@gtest.ccny.cuny.edu",
     upcomingEvents: [],
-    type: 'student-life'
+    filter: 'student-life'
   },
   {
     name: "Be The Match",
@@ -98,20 +106,17 @@ const clubs = [
     location: "City College of New York",
     email: "",
     upcomingEvents: [],
-    type: 'student-life'
+    filter: 'student-life'
   },
   
 ];
 
 const clubsContainer = document.getElementById("clubs-container");
-const filter = document.getElementById('filter-select');
-
-{/* <a href="./${club.name.split(" ").join("")}Club.html" id=${club.name} style="text-decoration: none;"> */}
 
 clubs.forEach(club => {
   const clubHtml = `
-    <a href="./CSClub.html" id=${club.name} style="text-decoration: none;">
-      <div class="club-item container content-container rounded mt-4 p-0" data-category="${club.filter}">
+    <a href="./CSClub.html" style="text-decoration: none;">
+      <div id="${club.name}" class="club-item container content-container rounded mt-4 p-0" data-category="${club.filter}">
         <div id="content-header" class="content-header-bc rounded-top-2 fs-4 l-1">
           <div class="club-name header-margin-left">${club.name}</div>
         </div>
@@ -142,21 +147,3 @@ clubs.forEach(club => {
 
   clubsContainer.innerHTML += clubHtml;
 });
-
-// filter.addEventListener('change', e => {
-//   console.log(filter.value)
-//   if (filter.value == 'none'){
-//     e.preventDefault()
-//     return;
-//   }
-//   // e.preventDefault()
-
-//   clubs.forEach(club => {
-//     if (club.type != filter.value) {
-//       console.log('hi');
-//       // console.log(document.getElementById(club.name).innerHTML) 
-
-//     }
-//   })
-// })
-
