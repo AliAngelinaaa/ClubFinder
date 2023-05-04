@@ -1,18 +1,74 @@
 const clubs = [
-  {
-    name: "Jaws Club",
-    leaders: ["Paul Back"],
-    location: "",
-    email: "...",
-    upcomingEvents: ["1", "2"]
-},
-{
-    name: "Architecture Club",
-    leaders: ["Michelle Guzman"],
-    location: "",
-    email: "...",
-    upcomingEvents: ["1", "2"]
-}
+    {
+        name: "Jaws Club",
+        leaders: ["Paul Back"],
+        location: "TBA(To Be Announced)",
+        email: "...",
+        upcomingEvents: ["1", "2"]
+    },
+    {
+        name: "Architecture Club",
+        leaders: ["Michelle Guzman"],
+        location: "TBA(To Be Announced)",
+        email: "...",
+        upcomingEvents: ["1", "2"]
+    },
+    {
+        name: "Anna Nurse Culinary Workshops Club",
+        leaders: ["Michelle Rojas"],
+        location: "TBA(To Be Announced)",
+        email: "...",
+        upcomingEvents: ["1", "2"]
+    },
+    {
+        name: "Biomedical Informatics(BIB)",
+        leaders: ["Adrian Guinrizzo"],
+        location: "TBA(To Be Announced)",
+        email: "...",
+        upcomingEvents: ["1", "2"]
+    },
+    {
+        name: "Construction Management Association",
+        leaders: ["Calvin Walters Jr"],
+        location: "TBA(To Be Announced)",
+        email: "...",
+        upcomingEvents: ["1", "2"]
+    },
+    {
+        name: "ENT Video Club",
+        leaders: ["Tristan Hassarath"],
+        location: "TBA(To Be Announced)",
+        email: "...",
+        upcomingEvents: ["1", "2"]
+    },
+    {
+        name: "Find a Solution! Chemistry Club",
+        leaders: ["Jannatul Barsha"],
+        location: "TBA(To Be Announced)",
+        email: "...",
+        upcomingEvents: ["1", "2"]
+    },
+    {
+        name: "IEEE (Institute of Electrical & Electronic Engineers)",
+        leaders: ["Seli Brataj"],
+        location: "TBA(To Be Announced)",
+        email: "...",
+        upcomingEvents: ["1", "2"]
+    },
+    {
+        name: "Industrial Design Club",
+        leaders: ["Itay Rubin"],
+        location: "TBA(To Be Announced)",
+        email: "...",
+        upcomingEvents: ["1", "2"]
+    },
+    {
+        name: "Law and Paralegal’s Club",
+        leaders: ["Elisabeth Marangoudakis"],
+        location: "TBA(To Be Announced)",
+        email: "...",
+        upcomingEvents: ["1", "2"]
+    }
 ];
 
 const clubsContainer = document.getElementById("clubs-container");
