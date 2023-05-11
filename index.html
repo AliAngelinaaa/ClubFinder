@@ -8,7 +8,7 @@
     <link href="ClubFinder.css" rel="stylesheet" type="text/css">
     <title>Club Finder</title>
 </head>
-<body style="background-image: url('./CU_WP_COLLEGE_LOGOS_1.PNG');">
+<body id="body" class="data" style="background-image: url('./CU_WP_COLLEGE_LOGOS_1.PNG');">
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html" >
@@ -35,7 +35,9 @@
         </ol>
     </nav>
 
-      <h2 class="text-capitalize position-relative ps-2 pb-3" style="font-family:Verdana-Bold; color:rgb(80, 80, 80); margin-left:10px;">Pick a college to explore</h2>
+    <button class="btn-dark" value="increase" class="increase" id="increase" >Increase Font++</button>
+    <button class="btn-dark" value="decrease" class="decrease" id="decrease" >Decrease Font++</button>
+      <h2 id="text" class="text-capitalize position-relative ps-2 pb-3" style="font-family:Verdana-Bold; color:rgb(80, 80, 80); margin-left:10px;">Pick a college to explore</h2>
       
       <div class="container text-center">
           <div class="row row-cols-5 row-gap-4" style="background-color:rgb(76, 90, 151, .5);">

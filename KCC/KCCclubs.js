@@ -4,28 +4,32 @@ const clubs = [
     leaders: ["Adrian Watson", "Janessa Graham", "Luis Cortazar", "Stephanie Soto"],
     location: "City College of New York",
     email: "accessfutures@gtest.ccny.cuny.edu",
-    upcomingEvents: []
+    upcomingEvents: [],
+    filter: "student-life"
   },
   {
     name: "African Student Union",
     leaders: ["Chidera Obi-Eyisi", "Jaden Hodges", "Shafau Sanni", "Chinaza Amaefule"],
     location: "City College of New York",
     email: "asu@gtest.ccny.cuny.edu",
-    upcomingEvents: []
+    upcomingEvents: [],
+    filter: "cultural"
   },
   {
     name: "Alpha Phi Alpha Fraternity, Inc",
     leaders: ["Obinna Agwuncha", "Syed Tajria", "Cameron Philips", "Delorian Millie"],
     location: "City College of New York",
     email: "alphaphialpha@gtest.ccny.cuny.edu",
-    upcomingEvents: []
+    upcomingEvents: [],
+    filter: "student-life"
   },
   {
     name: "American Institute of Architecture Students (AIAS)",
     leaders: ["Danyel Hueyopan", "Labiba Nazrul", "Sidney Mauricio", "Fion Li"],
     location: "City College of New York",
     email: "aias@gtest.ccny.cuny.edu",
-    upcomingEvents: []
+    upcomingEvents: [],
+    filter: "academic"
   },
   {
     name: "American Medical Women's Association in the City College of New York",

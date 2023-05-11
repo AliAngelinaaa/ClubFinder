@@ -1,4 +1,5 @@
 const searchInput = document.getElementById('search-input');
+const body = document.getElementById('body');
 
 searchInput.addEventListener('keyup', function () {
     const query = searchInput.value.trim().toLowerCase();
@@ -29,3 +30,32 @@ function filterItems() {
       }
     });
   }
+
+
+  document.getElementById('increase').addEventListener('click', increase())
+  document.getElementById('decrease').addEventListener('click', decrease())
+
+
+  function increase(){
+    document.getElementById('text').style.fontSize = '12rem'
+    
+  }
+
+  function decrease(){
+    document.getElementById('text').style.fontSize = '12rem'
+    
+  }
+  
+  
+//   $(document).ready(function(){
+//     $(".increaseFont,.decreaseFont").click(function(){
+//        var type= $(this).val();
+//        var curFontSize = $('.data').css('font-size');
+//        if(type=='increase'){
+//           $('.data').css('font-size', parseInt(curFontSize)+1);
+//        } else{
+//           $('.data').css('font-size', parseInt(curFontSize)-1);
+//        }
+//        // alert($('.data').css('font-size'));
+//     });
+//  });
