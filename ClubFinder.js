@@ -32,8 +32,8 @@ function filterItems() {
   }
 
 
-  document.getElementById('increase').addEventListener('click', increase())
-  document.getElementById('decrease').addEventListener('click', decrease())
+  // document.getElementById('increase').addEventListener('click', increase())
+  // document.getElementById('decrease').addEventListener('click', decrease())
 
 
   function increase(){

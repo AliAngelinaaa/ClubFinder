@@ -8,7 +8,7 @@
     <link href="ClubFinder.css" rel="stylesheet" type="text/css">
     <title>Login</title>
 </head>
-<body style="background-image: url('./CU_WP_COLLEGE_LOGOS_1.PNG');">
+<body id="body" style="background-image: url('./CU_WP_COLLEGE_LOGOS_1.PNG');">
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html" >
@@ -27,6 +27,9 @@
     </nav>
 
     <div class="container">
+      <button class="btn-dark" value="decrease" class="decrease" id="decrease" onclick="document.getElementById('body').style.fontSize = '1rem'">A-</button>
+    <button class="btn-dark" value="increase" class="increase" id="increase" onclick="document.getElementById('body').style.fontSize = '2rem'">A+</button>
+  
             <div class="container rounded mt-4 p-0" >
                 <div id="content-header" class="navbar-light rounded-top-2 fs-4 l-1">
                     <div class="header-margin-left text-center">Login</div>

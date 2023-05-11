@@ -9,7 +9,7 @@
     <link href="../ClubFinder.css" rel="stylesheet" type="text/css">
     <title>Clubs Feed</title>
 </head>
-<body style="background-color: rgb(254, 249, 246);">
+<body id="body" style="background-color: rgb(254, 249, 246);">
     <nav id="navbar" class="navbar navbar-expand-lg navbar-nycct">
         <div class="container-fluid">
           <a class="navbar-brand navbar-brand-nycct" href="../index.html">
@@ -33,6 +33,9 @@
           <li class="breadcrumb-item active" aria-current="page">ClubFeed NYCCT</li>
         </ol>
     </nav>
+
+    <button class="btn-dark" value="decrease" class="decrease" id="decrease" onclick="document.getElementById('body').style.fontSize = '1rem'">A-</button>
+    <button class="btn-dark" value="increase" class="increase" id="increase" onclick="document.getElementById('body').style.fontSize = '2rem'">A+</button>
 
     <div id="search-bar" class="input-group mb-1">
         <input id="search-input" type="text" class="form-control opacity-50" aria-label="Search Bar" aria-describedby="button-addon2">
@@ -59,6 +62,7 @@
         </ul>
     </div> -->
 
+    
     <div id="clubs-container">
     </div>
 
