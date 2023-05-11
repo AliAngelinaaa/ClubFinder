@@ -4,70 +4,80 @@ const clubs = [
         leaders: ["Paul Back"],
         location: "TBA(To Be Announced)",
         email: "...",
-        upcomingEvents: ["1", "2"]
+        upcomingEvents: ["1", "2"],
+        filter: "student-life"
     },
     {
         name: "Architecture Club",
         leaders: ["Michelle Guzman"],
         location: "TBA(To Be Announced)",
         email: "...",
-        upcomingEvents: ["1", "2"]
+        upcomingEvents: ["1", "2"],
+        filter: "academic"
     },
     {
         name: "Anna Nurse Culinary Workshops Club",
         leaders: ["Michelle Rojas"],
         location: "TBA(To Be Announced)",
         email: "...",
-        upcomingEvents: ["1", "2"]
+        upcomingEvents: ["1", "2"],
+        filter: "academic"
     },
     {
         name: "Biomedical Informatics(BIB)",
         leaders: ["Adrian Guinrizzo"],
         location: "TBA(To Be Announced)",
         email: "...",
-        upcomingEvents: ["1", "2"]
+        upcomingEvents: ["1", "2"],
+        filter: "academic"
     },
     {
         name: "Construction Management Association",
         leaders: ["Calvin Walters Jr"],
         location: "TBA(To Be Announced)",
         email: "...",
-        upcomingEvents: ["1", "2"]
+        upcomingEvents: ["1", "2"],
+        filter: "academic"
     },
     {
         name: "ENT Video Club",
         leaders: ["Tristan Hassarath"],
         location: "TBA(To Be Announced)",
         email: "...",
-        upcomingEvents: ["1", "2"]
+        upcomingEvents: ["1", "2"],
+        filter: "arts"
     },
     {
         name: "Find a Solution! Chemistry Club",
         leaders: ["Jannatul Barsha"],
         location: "TBA(To Be Announced)",
         email: "...",
-        upcomingEvents: ["1", "2"]
+        upcomingEvents: ["1", "2"],
+        filter: "academic"
     },
     {
         name: "IEEE (Institute of Electrical & Electronic Engineers)",
         leaders: ["Seli Brataj"],
         location: "TBA(To Be Announced)",
         email: "...",
-        upcomingEvents: ["1", "2"]
+        upcomingEvents: ["1", "2"],
+        filter: "academic"
     },
     {
         name: "Industrial Design Club",
         leaders: ["Itay Rubin"],
         location: "TBA(To Be Announced)",
         email: "...",
-        upcomingEvents: ["1", "2"]
+        upcomingEvents: ["1", "2"],
+        filter: "arts"
     },
     {
         name: "Law and Paralegal's Club",
         leaders: ["Elisabeth Marangoudakis"],
         location: "TBA(To Be Announced)",
         email: "...",
-        upcomingEvents: ["1", "2"]
+        upcomingEvents: ["1", "2"],
+        filter: "academic"
     }
 ];
 

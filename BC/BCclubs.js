@@ -26,7 +26,7 @@ const clubs = [
     'Evelina Safanova'],
     email:'brooklyncollege.mocktrial@gmail.com',
     upcomingEvents: [],
-    filter: 'civil'
+    filter: 'academic'
   },
   {
     name: "Computer Science Club",
@@ -42,7 +42,7 @@ const clubs = [
     location: "",
     email: "",
     upcomingEvents: [],
-    filter: 'civil'
+    filter: 'student-life'
   },
   {
     name: "Accounting Society",
@@ -74,7 +74,7 @@ const clubs = [
     location: "",
     email: "bcesportsandgamingclub@gmail.com",
     upcomingEvents: [],
-    filter: 'student-life'
+    filter: 'sports'
   },
   {
     name: "CUNY Uzbek Society",
@@ -82,7 +82,7 @@ const clubs = [
     location: "",
     email: "info@cunyuzbeksociety.com",
     upcomingEvents: [],
-    filter: 'student-life'
+    filter: 'cultural'
   },
   {
     name: "Graduate Student Organization",
@@ -90,7 +90,7 @@ const clubs = [
     location: "Student Center Room 309",
     email: "Officeassistant.bcgso@gmail.com",
     upcomingEvents: [],
-    filter: 'civil'
+    filter: 'academic'
   },
   {
     name: "Bangladesh Student Association of City College of New York",
@@ -98,7 +98,7 @@ const clubs = [
     location: "City College of New York",
     email: "bsa@gtest.ccny.cuny.edu",
     upcomingEvents: [],
-    filter: 'student-life'
+    filter: 'cultural'
   },
   {
     name: "Be The Match",

@@ -12,7 +12,8 @@ const clubs = [
     leaders: ["Regina Varin-Mignano"],
     location: "Fridays: C-414",
     email: "rvarin-mignano@lagcc.cuny.edu",
-    upcomingEvents: ["1", "2"]
+    upcomingEvents: ["1", "2"],
+    filter: "student-life"
   },
   {
     name: "Chinese Student Club",
@@ -27,28 +28,32 @@ const clubs = [
     leaders: ["Rochelle Spencer"],
     location: "C-446",
     email: "rspencer@lagcc.cuny.edu",
-    upcomingEvents: ["1", "2"]
+    upcomingEvents: ["1", "2"],
+    filter: "student-life"
   },
   {
     name: "Criminal Justice Club",
     leaders: ["Kyle Hollar-Gregory"],
     location: "C-308",
     email: "mkoller@lagcc.cuny.edu",
-    upcomingEvents: []
+    upcomingEvents: [],
+    filter: "academic"
   },
   {
     name: "Climate Reality Club",
     leaders: ["Kevin Mark"],
     location: "M-107",
     email: "kmark@lagcc.cuny.edu",
-    upcomingEvents: [1, 2]
+    upcomingEvents: [1, 2],
+    filter: "academic"
   },
   {
     name: "Economics Club",
     leaders: ["Choon Shan Lai", "Neetu Kaushik"],
     location: "C-456",
     email: "clai@lagcc.cuny.edu",
-    upcomingEvents: [1, 2]
+    upcomingEvents: [1, 2],
+    filter: "academic"
   },
   {
     name: "Film Club",
@@ -56,14 +61,15 @@ const clubs = [
     location: "E-113",
     email: "jschafer@lagcc.cuny.edu",
     upcomingEvents: [1, 2],
-    filter: ["entertainment"]
+    filter: "arts"
   },
   {
     name: "Finance Club",
     leaders: ["Andrea Francis"],
     location: "B-209",
     email: "afrancis@lagcc.cuny.edu",
-    upcomingEvents: [1, 2]
+    upcomingEvents: [1, 2],
+    filter: "academic"
   },
   {
     name: "Fine Arts Club",
@@ -86,21 +92,24 @@ const clubs = [
     leaders: ["Deema Bayrakdar", "Tuli Chatterji"],
     location: "C-448",
     email: "dbayrakdar@lagcc.cuny.edu",
-    upcomingEvents: [1, 2]
+    upcomingEvents: [1, 2],
+    filter: "student-life"
   },
   {
     name: "Licensed Practical Nursing (LPN) Club",
     leaders: ["Margarita Israilova"],
     location: "M-136",
     email: "misrailova@lagcc.cuny.edu",
-    upcomingEvents: [1, 2]
+    upcomingEvents: [1, 2],
+    filter: "academic"
   },
   {
     name: "Nutrition & Culinary Management (NCM) Club",
     leaders: ["Nicolle Fernandes", "Jenny Palios"],
     location: "M-156",
     email: "nfernandes@lagcc.cuny.edu",
-    upcomingEvents: [1, 2]
+    upcomingEvents: [1, 2],
+    filter: "student-life"
   },
   {
     name: "Photography Club",
@@ -108,28 +117,31 @@ const clubs = [
     location: "	C-466",
     email: "mrossi@lagcc.cuny.edu",
     upcomingEvents: [1, 2],
-    filter: ["arts"]
+    filter: "arts"
   },
   {
     name: "Physical Therapist Assistant (PTA) Club",
     leaders: ["Debra Engel"],
     location: "E-264",
     email: "dengel@lagcc.cuny.edu",
-    upcomingEvents: ["1", "2"]
+    upcomingEvents: ["1", "2"],
+    filter: "academic"
   },
   {
     name: "Queer And Fierce",
     leaders: ["Nathan Tosh"],
     location: "Thursdays: MB-10B",
     email: "ntosh@lagcc.cuny.edu",
-    upcomingEvents: ["1", "2"]
+    upcomingEvents: ["1", "2"],
+    filter: "student-life"
   },
   {
     name: "Radiologic Technology (Rad Tech) Club",
     leaders: ["Victoria Buitrago Brown", "Theresa Licari"],
     location: "M-158",
     email: "vbuitragobrown@lagcc.cuny.edu",
-    upcomingEvents: ["1", "2"]
+    upcomingEvents: ["1", "2"],
+    filter: "academic"
   },
   {
     name: "Red Hawk Engineering & Computer Science Club",
@@ -137,14 +149,15 @@ const clubs = [
     location: "E-260",
     email: "nhosannah@lagcc.cuny.edu",
     upcomingEvents: ["1", "2"],
-    filter: "academics"
+    filter: "academic"
   },
   {
     name: "Registered Nurse (RN) Club",
     leaders: ["Donna Siergie-Munsey"],
     location: "E-246",
     email: "acortijo@lagcc.cuny.edu",
-    upcomingEvents: ["1", "2"]
+    upcomingEvents: ["1", "2"],
+    filter: "academic"
   },
   {
     name: "Science, Technology, Engineering & Mathematics (STEM) Club",
@@ -152,21 +165,23 @@ const clubs = [
     location: "M-155",
     email: "rgupta@lagcc.cuny.edu",
     upcomingEvents: ["1", "2"],
-    filter: "academics"
+    filter: "academic"
   },
   {
     name: "Student Occupational Therapy Assistant (SOTA) Club",
     leaders: ["Luisa Hindle"],
     location: "M-161",
     email: "lhindle@lagcc.cuny.edu",
-    upcomingEvents: ["1", "2"]
+    upcomingEvents: ["1", "2"],
+    filter: "academic"
   },
   {
     name: "Tabletop Gaming Club",
     leaders: ["Deirdre Flood"],
     location: "C-236",
     email: "dflood@lagcc.cuny.edu",
-    upcomingEvents: ["1", "2"]
+    upcomingEvents: ["1", "2"],
+    filter: "sports"
   },
   {
     name: "Theatre Club",
@@ -181,14 +196,16 @@ const clubs = [
     leaders: ["Tameka Battle"],
     location: "M-211",
     email: "msilverman@lagcc.cuny.edu",
-    upcomingEvents: ["1", "2"]
+    upcomingEvents: ["1", "2"],
+    filter: "sports"
   },
   {
     name: "Veterinary Technology (Vet Tech) Club",
     leaders: ["Lara Arbach", "Lisa Flores"],
     location: "Fridays, C-443",
     email: "larbach@lagcc.cuny.edu",
-    upcomingEvents: ["1", "2"]
+    upcomingEvents: ["1", "2"],
+    filter: "academic"
   },
   {
     name: "Women In Tech (WIT) Club",
@@ -196,7 +213,7 @@ const clubs = [
     location: "E-225",
     email: "nxu@lagcc.cuny.edu",
     upcomingEvents: ["1", "2"],
-    filter: "academics"
+    filter: "academic"
   }
 ];
 
