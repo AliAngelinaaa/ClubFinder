@@ -78,7 +78,7 @@ function login(){
 
 function goToHomePage(){
   let currFile = location.pathname.substring(location.pathname.lastIndexOf("/")+1);
-  if((currFile==="seniorcollege.html"||currFile==="communitycollege.html")){
+  if((currFile==="seniorcollege.html"||currFile==="communitycollege.html"||currFile==="myAccount.html")){
     if(localStorage.getItem("someVarKey") === "true"){
       document.getElementById("home").href = "loggedInIndex.html";
     }
