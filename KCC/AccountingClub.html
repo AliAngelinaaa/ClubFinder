@@ -20,7 +20,7 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              <a id="home" class="nav-link" aria-current="page" href="../index.html" onclick="goToHomePage()">Home</a>
             </div>
           </div>
         </div>
@@ -28,7 +28,7 @@
 
     <nav id="tab-tracker" aria-label="breadcrumb">
         <ol class="breadcrumb position-relative" style="left: 1.5rem;">
-          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-item"><a id="homecrumb" href="../index.html" onclick="goToHomePage()">Home</a></li>
           <li class="breadcrumb-item"><a href="./ClubsFeedKCC.html">ClubsFeed KCC</a></li>
           <li class="breadcrumb-item active" aria-current="page">Accounting_Club</li>
         </ol>
@@ -191,7 +191,7 @@
    
 
 
-
+      <script src="../ClubFinder.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

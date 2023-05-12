@@ -88,9 +88,11 @@ function goToHomePage(){
   }
   else if(localStorage.getItem("someVarKey")==="true"){
     document.getElementById("home").href = "../loggedInIndex.html";
+    document.getElementById("homecrumb").href = "../loggedInIndex.html";
   }
   else{
     document.getElementById("home").href = "../index.html";
+    document.getElementById("homecrumb").href = "../index.html";
   }
 }
 
