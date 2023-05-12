@@ -83,7 +83,7 @@ function goToHomePage(){
       document.getElementById("home").href = "loggedInIndex.html";
     }
     else{
-      document.getElementById("home").href = "loggedInIndex.html";
+      document.getElementById("home").href = "index.html";
     }
   }
   else if(localStorage.getItem("someVarKey")==="true"){
@@ -92,4 +92,9 @@ function goToHomePage(){
   else{
     document.getElementById("home").href = "../index.html";
   }
+}
+
+function logout(){
+  loggedIn = false;
+  localStorage.setItem("someVarKey", loggedIn);
 }
