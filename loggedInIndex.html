@@ -8,7 +8,7 @@
     <link href="ClubFinder.css" rel="stylesheet" type="text/css">
     <title>Club Finder</title>
 </head>
-<body style="background-image: url('./CU_WP_COLLEGE_LOGOS_1.PNG');">
+<body id="body" class="data" style="background-image: url('./CU_WP_COLLEGE_LOGOS_1.PNG');">
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html" >
@@ -19,10 +19,15 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a id="home" class="nav-link" aria-current="page" href="./index.html" onclick="goToHomePage()">Home</a>
+            <div class="navbar-nav" id="navbar">
+              <!--<a class="nav-link active" aria-current="page" href="./index.html" style="color:rgb(227, 227, 227);">Home</a>-->
               <a class="nav-link" href="communitycollege.html">Community Colleges</a>
-              <!--<a class="nav-link" href="seniorcollege.html">Undergraduate Colleges</a>-->
+              <a class="nav-link" href="seniorcollege.html">Senior Colleges</a>
+              <a id='myClubs' class="nav-link" href="myAccount.html">MyClubs</a>
+                </div>
+            </div>
+
+
             </div>
           </div>
         </div>
@@ -34,28 +39,66 @@
         </ol>
     </nav>
 
-      <h2 class="text-capitalize position-relative ps-2 pb-3" style="font-family:Verdana-Bold; color:rgb(67, 67, 67)">Pick a college to explore</h2>
+    <button class="btn-dark" value="decrease" class="decrease" id="decrease" onclick="document.getElementById('body').style.fontSize = '1rem'">A-</button>
+    <button class="btn-dark" value="increase" class="increase" id="increase" onclick="document.getElementById('body').style.fontSize = '2rem'">A+</button>
+      <h2 id="text" class="text-capitalize position-relative ps-2 pb-3" style="font-family:Verdana-Bold; color:rgb(80, 80, 80); margin-left:10px;">Pick a college to explore</h2>
       
       <div class="container text-center">
-          <div class="row row-cols-5 row-gap-4">
-            <div class="col" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Brooklyn College" style="background-color:rgb(76, 90, 151, .5);">
+          <div class="row row-cols-5 row-gap-4" style="background-color:rgb(76, 90, 151, .5);">
+            <div class="col" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Brooklyn College">
                 <a href="./BC/ClubsFeedBC.html">
-                    <img src="CollegeLogos/brooklyncollege_logo.JPG" alt="Brooklyn College" class="rounded-circle" style="height: 7rem; width: 7.5rem;">
+                    <img src="CollegeLogos/brooklyncollege_logo.JPG" alt="Brooklyn College" class="rounded-circle shadow-sm" style="height: 7rem; width: 7.5rem;">
                 </a>
             </div>
-            <div class="col" data-bs-toggle="tooltip" data-bs-placement="bottom" title="City College" style="background-color:rgb(76, 90, 151, .5);">
+            <div class="col" data-bs-toggle="tooltip" data-bs-placement="bottom" title="City College">
                 <a href="./CCNY/ClubsFeedCCNY.html">
-                    <img src="CollegeLogos/ccny_logo.JPG" alt="City College" class="rounded-circle" style="height: 7rem; width: 7.5rem;">
+                    <img src="CollegeLogos/ccny_logo.JPG" alt="City College" class="rounded-circle shadow-sm" style="height: 7rem; width: 7.5rem;">
                 </a>
             </div>
-            <div class="col" data-bs-toggle="tooltip" data-bs-placement="bottom" title="City Tech" style="background-color:rgb(76, 90, 151, .5);">
+            <div class="col" data-bs-toggle="tooltip" data-bs-placement="bottom" title="City Tech">
                 <a href="./NYCCT/ClubsFeedNYCCT.html" >
-                    <img src="CollegeLogos/nycct_logo.JPG" alt="City Tech" class="rounded-circle" style="height: 7rem; width: 7.5rem;">
+                    <img src="CollegeLogos/nycct_logo.JPG" alt="City Tech" class="rounded-circle shadow-sm" style="height: 7rem; width: 7.5rem;">
                 </a>
+            </div>
+            <div class="col" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kingsburough Community College">
+                <a href="./KCC/ClubsFeedKCC.html">
+                    <img src="CollegeLogos/kingsborough_logo.JPG" alt="Kingsburough CC" class="rounded-circle shadow-sm" style="height: 7rem; width: 7.5rem;">
+                </a>
+            </div>
+            <div class="col" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Laguardia Community College">
+                <a href="./LCC/ClubsFeedLCC.html">
+                    <img src="CollegeLogos/laguardia_logo.JPG" alt="Laguardia CC" class="rounded-circle shadow-sm" style="height: 7rem; width: 7.5rem;">
+                </a>    
             </div>
           </div>
-          
       </div>
+      <!--
+      <div id="footer">
+        <footer class="position-absolute bottom-0 pos" style="width: 100%; height: 16rem; background-color: rgb(189, 185, 185, .6);">
+          <p class="text-capitalize text-black text-center">Hope you find everything you're looking for and that your college experience is everything that you make it</p>
+          <ul class="list-group list-group-horizontal position-relative float-start" style="font-size: .8rem; line-height: .2rem;">
+            <li class="list-group-item">
+              <h4>Find more about us:</h4>
+              <ul class="list-group" style="line-height: .1rem;">
+                <li class="list-group-item"><a href="https://github.com/AndrewLee-Ace" target="_blank" class="text-dark">Andrew Lee</a> </li>
+                <li class="list-group-item"><a href="https://github.com/sabinaismailova" target="_blank" class="text-dark">Sabina Ismailova</a> </li>
+                <li class="list-group-item"><a href="https://github.com/AliAngelinaaa" target="_blank" class="text-dark">Nafisa Anzum</a> </li>
+                <li class="list-group-item"><a href="https://github.com/DeeonStjean" target="_blank" class="text-dark">Deeon St Jean</a> </li>
+              </ul>
+            </li>
+            <li class="list-group-item" style="width: 30rem;">
+              <h4 class="mb-4">School Website</h4>
+              <a href="https://www.brooklyn.edu" style="font-size: 2rem;"> Brooklyn College </a>
+            </li>
+
+            <li class="list-group-item">
+              <div class="container">
+                <h1 class="text-capitalize text-center btn-primary">Enjoy your new club!</h1>
+              </div>
+            </li>
+          </ul>
+        </footer>
+      </div>-->
 
       <div id="footer" style="position:absolute; width:100%; height: 2.5rem; bottom:0;">
         <footer class="text-black text-center text-lg-start" style="background-color: rgb(255, 255, 255, 0.8); font-family: Verdana;">

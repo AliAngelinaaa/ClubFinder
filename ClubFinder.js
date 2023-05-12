@@ -59,3 +59,37 @@ function filterItems() {
 //        // alert($('.data').css('font-size'));
 //     });
 //  });
+
+var loggedIn = false;
+
+function login(){
+  document.getElementById("log").removeChild(document.getElementById("button"));
+  const myClubs = document.createElement("a");
+  myClubs.id="myClubs";
+  myClubs.className="nav-link";
+  myClubs.href="myAccount.html";
+  myClubs.textContent = "MyClubs";
+  document.getElementById("navbar").append(myClubs);
+  loggedIn = true;
+  localStorage.setItem("someVarKey", loggedIn);
+  var xButton = document.getElementById("x-button");
+  xButton.click();
+}
+
+function goToHomePage(){
+  let currFile = location.pathname.substring(location.pathname.lastIndexOf("/")+1);
+  if((currFile==="seniorcollege.html"||currFile==="communitycollege.html")){
+    if(localStorage.getItem("someVarKey") === "true"){
+      document.getElementById("home").href = "loggedInIndex.html";
+    }
+    else{
+      document.getElementById("home").href = "loggedInIndex.html";
+    }
+  }
+  else if(localStorage.getItem("someVarKey")==="true"){
+    document.getElementById("home").href = "../loggedInIndex.html";
+  }
+  else{
+    document.getElementById("home").href = "../index.html";
+  }
+}
