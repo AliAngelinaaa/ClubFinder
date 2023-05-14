@@ -1,87 +1,94 @@
 const clubs = [
-  {
-    name: "Access Futures Club",
-    leaders: ["Adrian Watson", "Janessa Graham", "Luis Cortazar", "Stephanie Soto"],
-    location: "City College of New York",
-    email: "accessfutures@gtest.ccny.cuny.edu",
-    upcomingEvents: [],
-    filter: "student-life"
-  },
-  {
-    name: "African Student Union",
-    leaders: ["Chidera Obi-Eyisi", "Jaden Hodges", "Shafau Sanni", "Chinaza Amaefule"],
-    location: "City College of New York",
-    email: "asu@gtest.ccny.cuny.edu",
-    upcomingEvents: [],
-    filter: "cultural"
-  },
-  {
-    name: "Alpha Phi Alpha Fraternity, Inc",
-    leaders: ["Obinna Agwuncha", "Syed Tajria", "Cameron Philips", "Delorian Millie"],
-    location: "City College of New York",
-    email: "alphaphialpha@gtest.ccny.cuny.edu",
-    upcomingEvents: [],
-    filter: "student-life"
-  },
-  {
-    name: "American Institute of Architecture Students (AIAS)",
-    leaders: ["Danyel Hueyopan", "Labiba Nazrul", "Sidney Mauricio", "Fion Li"],
-    location: "City College of New York",
-    email: "aias@gtest.ccny.cuny.edu",
-    upcomingEvents: [],
-    filter: "academic"
-  },
-  {
-    name: "American Medical Women's Association in the City College of New York",
-    leaders: ["Ayesha Khan", "Fisola Aruleba", "Mariam Quraishi", "Rodyna Mostafa"],
-    location: "City College of New York",
-    email: "amwa_undergrad@gtest.ccny.cuny.edu",
-    upcomingEvents: []
-  },
-  {
-    name: "American Society of Civil Engineers",
-    leaders: ["Adel Alotibe", "Samantha Castro", "Ruben Martinez", "Justin Chen"],
-    location: "City College of New York",
-    email: "asce@gtest.ccny.cuny.edu",
-    upcomingEvents: []
-  },
-  {
-    name: "Association for Computing Machinery",
-    leaders: ["Meherun Mim", "Tanim Islam", "Abdul Rafi", "Najia Jahan"],
-    location: "City College of New York",
-    email: "acm@gtest.ccny.cuny.edu",
-    upcomingEvents: []
-  },
-  {
-    name: "Badminton Club",
-    leaders: ["Shahriyar Islam", "Mahim Rahman", "Shafin Rehman", "Sajida Sultana"],
-    location: "City College of New York",
-    email: "@gtest.ccny.cuny.edu",
-    upcomingEvents: []
-  },
-  {
-    name: "Bangladesh Student Association of City College of New York",
-    leaders: ["Sefat Monzor", "Mostafa Chowdhury", "Aquib Zaman", "Asfak Ahmed"],
-    location: "City College of New York",
-    email: "bsa@gtest.ccny.cuny.edu",
-    upcomingEvents: []
-  },
-  {
-    name: "Be The Match",
-    leaders: [],
-    location: "City College of New York",
-    email: "",
-    upcomingEvents: []
-  }
+    {
+        name: "Accounting",
+        leaders: ["Michelle Davidowitz"],
+        location: "TBA(To Be Announced)",
+        email: "contact by advisor Ext (389-5555)",
+        upcomingEvents: ["1","2"],
+        filter: "academic"
+    },
+    {
+        name: "Animation",
+        leaders: ["Thomas Eaton"],
+        location: "TBA(To Be Announced)",
+        email: "contact by Advisor Ext (5713)",
+        upcomingEvents: ["1","2"],
+        filter: "student-Life"
+    },
+    {
+        name: "Antheon",
+        leaders: ["Robert Wong"],
+        location: "TBA(To Be Announced)",
+        email: "contact by Advisor Ext (5603)",
+        upcomingEvents: ["1", "2"],
+        filter: "student-life"
+    },
+    {
+        name: "Art Club",
+        leaders: ["Jonathan Macagba"],
+        location: "TBA(To Be Announced)",
+        email: "contact by Advisor Ext (5718)",
+        upcomingEvents: ["1", "2"],
+        filter: "arts"
+    },
+    {
+        name: "Bilingual Club",
+        leaders: ["Kevin Gayle"],
+        location: "TBA(To Be Announced)",
+        email: "contact by Advisor Ext (5995)",
+        upcomingEvents: ["1", "2"],
+        filter:"academic"
+    },
+    {
+        name: "Brother's United",
+        leaders: ["Micheal Rodriguez"],
+        location: "TBA(To Be Announced)",
+        email: "contact by Advisor Ext (5339)",
+        upcomingEvents: ["1", "2"],
+        filter: "student-life"
+    },
+    {
+        name: "Business Society",
+        leaders: ["Anna Geller","Dorina Tila"],
+        location: "TBA(To Be Announced)",
+        email: "contact by Advisor Ext (6731/4762)",
+        upcomingEvents: ["1", "2"],
+        filter: "academic"
+
+    },
+    {
+        name: "Ceramics Club",
+        leaders: ["Anna Belenki"],
+        location: "TBA(To Be Announced)",
+        email: "contact by Advistor Ext (5718)",
+        upcomingEvents: ["1", "2"],
+        filter: "arts"
+    },
+    {
+        name: "Chi Alpha Epsilon National Honor Society",
+        leaders: ["NaReida Crandall"],
+        location: "TBA(To Be Announced)",
+        email: "contact by Advistor Ext (5781)",
+        upcomingEvents: ["1", "2"],
+        filter: "student-life"
+    },
+    {
+        name: "College Discovery",
+        leaders: ["Kevin Gayle"],
+        location: "TBA(To Be Announced)",
+        email: "contact by Advistor Ext (5995)",
+        upcomingEvents: ["1", "2"],
+        filter: "academic"
+    }
 ];
 
 const clubsContainer = document.getElementById("clubs-container");
 
 clubs.forEach(club => {
   const clubHtml = `
-    <a href="./${club.name.split(" ").join("")}Club.html" style="text-decoration: none;">
+    <a href="./AccountingClub.html" style="text-decoration: none;">
       <div id="${club.name}" class="club-item container content-container rounded mt-4 p-0" data-category="${club.filter}">
-        <div id="content-header" class="content-header-lcc rounded-top-2 fs-4 l-1">
+        <div id="content-header" class="content-header-kcc rounded-top-2 fs-4 l-1">
           <div class="club-name header-margin-left">${club.name}</div>
         </div>
         <div id="content-details" class="content-details">
