@@ -40,9 +40,8 @@ body {
     color: rgb(40, 40, 40);
 }
 
-.navbar-brand:hover,
-.navbar-brand:active:focus {
-    font-size: 26px;
+.navbar-brand:hover{
+    color: rgb(255, 255, 255);
 }
 
 .breadcrumb-item {
